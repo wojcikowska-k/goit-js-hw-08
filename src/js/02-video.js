@@ -4,7 +4,7 @@ const player = new Vimeo.Player(iframe);
 const _ = require('lodash');
 
 function saveCurrentTime(data) {
-  localStorage.setItem('videoplayer-current-time', data.seconds);
+  return localStorage.setItem('videoplayer-current-time', data.seconds);
 }
 
 function getCurrentTime() {
